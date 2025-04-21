@@ -1,0 +1,94 @@
+body {
+    background-color: #f4f8fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: slideIn 0.8s ease;
+}
+
+h2 {
+    color: #1976d2;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-container input[type="number"], 
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #90caf9;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.fraud {
+    background-color: #e53935;
+    color: white;
+}
+
+.non-fraud {
+    background-color: #43a047;
+    color: white;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
